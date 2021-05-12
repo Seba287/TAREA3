@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+</head>
+<body>
+
+    <script>
+     var nombre;
+     var distancia;
+   
+     nombre=prompt('ingresa tu nombre')
+     distancia=prompt('ingresa una distancia entre 0 y +100000 metros:','');
+
+     if (distancia<=1000) {
+         document.write(nombre+' podes reccorrer esa distancia a pie ');
+         console.log('la distancia es: ' + distancia);
+     }
+     if (distancia>=1001 && distancia<=10000) {
+         document.write(nombre+' podes reccorrer esa distancia en bicicleta ');
+         console.log('la distancia es: ' + distancia);
+     }
+     if (distancia>=10001 && distancia<=30000) {
+        document.write(nombre+' podes reccorrer esa distancia en colectivo ');
+        console.log('la distancia es: ' + distancia);
+     }
+     if (distancia>=30001 && distancia<=100000) {
+        document.write(nombre+' podes reccorrer esa distancia en auto ');
+        console.log('la distancia es: ' + distancia);
+     }
+    if (distancia>=100001) {
+        document.write(nombre+' podes reccorrer esa distancia en avion ');
+        console.log('la distancia es: ' + distancia);
+    }
+    </script>
+    
+</body>
+</html>
